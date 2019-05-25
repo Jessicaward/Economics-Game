@@ -1,0 +1,32 @@
+[ Game Design Document ]
+
+---SCENARIO---
+The player will play as a firm in a capitalist economy.
+
+The player will have the initial choice of one company type:
+coffee shop
+
+The player will have to make microeconomic decisions to help the firm stay afloat,
+but macroeconomic decisions will be made by the Government.
+
+
+---GAME MECHANICS---
+The player will be able to change their product prices, based on the supply levels in the geographical area.
+The player will be able to change the quality of their products, leading to good/bad online reviews.
+The player will be asked to make ethical decisions, which will affect consumer's opinions of their brand.
+The player will be able to control the location of the coffee shop, (higher rent on the high street, dirt cheap in the middle of nowhere).
+The player will be able to view the current economic report for the month whenever they want.
+Time will pass (one day is 30 seconds irl).
+Every month, the economic report will be delivered to the player, with statistics based on how they are doing.
+The player will be able to pay for marketing to attempt to boost their brand.
+[MAYBE] The player will be able to manage staff (hire, fire, discipline and reward) based on performance.
+
+
+---GRAPHICS/UI---
+The UI will be a console based menu.
+[MAYBE] Two consoles, one for the player interaction (menus, information etc). The other for the monthly report/current time of day?
+
+---TECHNICAL DETAILS---
+The storage of the save will be done via text file.
+    -Databases are large and unnecessary for such a simple storage system.
+    -This allows me to store things in a "one file fits all" kinda way.
