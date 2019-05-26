@@ -7,7 +7,7 @@ namespace Economics_Game
 {
     public class UserInterface
     {
-        public UserInterface()
+        public UserInterface(Firm firm, IEnumerable<Product> products)
         {
             _mainMenuOptions = new Dictionary<int, string>
             {
@@ -16,11 +16,15 @@ namespace Economics_Game
                 {3, "Location"},
                 {4, "Monthly report"}
             };
+            _firm = firm;
+            _products = products;
         }
 
         //todo: instead of being int, string... this could be int, tempObject, to include title and submenu?
         private readonly Dictionary<int, string> _mainMenuOptions;
-
+        private readonly Firm _firm;
+        private readonly IEnumerable<Product> _products;
+        
         public void GetAction()
         {
             //This will return *something* for the game to do.

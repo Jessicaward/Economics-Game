@@ -20,6 +20,12 @@ Time will pass (one day is 30 seconds irl).
 Every month, the economic report will be delivered to the player, with statistics based on how they are doing.
 The player will be able to pay for marketing to attempt to boost their brand.
 [MAYBE] The player will be able to manage staff (hire, fire, discipline and reward) based on performance.
+As customers enter the shop, they will each have a maximum number of products they will buy.
+    -These products will be randomly selected based on the current supply/demand for the product
+[MAYBE] The play will need to manage supply levels of each product
+    -Too many and the product goes out of date without making any money
+    -Too few and the product sells out, and therefore doesn't make any money.
+[MAYBE] The game will have a difficulty system, caused by the economy state. (Difficult may mean the macroeconomy is in a recession state).
 
 
 ---GRAPHICS/UI---
