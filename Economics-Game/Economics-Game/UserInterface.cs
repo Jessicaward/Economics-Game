@@ -91,7 +91,7 @@ namespace Economics_Game
 
         private string WriteProductsMenu()
         {
-            
+            throw new NotImplementedException();
         }
     }
 }

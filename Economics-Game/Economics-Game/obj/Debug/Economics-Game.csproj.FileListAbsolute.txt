@@ -1,0 +1,6 @@
+/Users/jessicaward/dev/Economics-Game/Economics-Game/Economics-Game/bin/Debug/Economics_Game.exe
+/Users/jessicaward/dev/Economics-Game/Economics-Game/Economics-Game/bin/Debug/Economics_Game.pdb
+/Users/jessicaward/dev/Economics-Game/Economics-Game/Economics-Game/obj/Debug/Economics-Game.csprojAssemblyReference.cache
+/Users/jessicaward/dev/Economics-Game/Economics-Game/Economics-Game/obj/Debug/Economics-Game.csproj.CoreCompileInputs.cache
+/Users/jessicaward/dev/Economics-Game/Economics-Game/Economics-Game/obj/Debug/Economics_Game.exe
+/Users/jessicaward/dev/Economics-Game/Economics-Game/Economics-Game/obj/Debug/Economics_Game.pdb
