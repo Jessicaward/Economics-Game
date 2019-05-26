@@ -1,8 +1,8 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using Economics_Game.Contract;
+using Economics_Game.Model;
 
 namespace Economics_Game
 {
@@ -11,6 +11,7 @@ namespace Economics_Game
         public UserInterface(Firm firm, IEnumerable<Product> products)
         {
             //todo: populate actions
+            //todo: populate submenus
             _mainMenuOptions = new List<MenuOption>
             {
                 new MenuOption()
@@ -55,7 +56,7 @@ namespace Economics_Game
                             Index = 8,
                             Option= "View existing staff members",
                             Action = null,
-                            Submenu = null //todo: obv fill this in
+                            Submenu = null
                         }
                     }
                 },
@@ -124,6 +125,8 @@ namespace Economics_Game
                 input = GetUserInput();
                 action = GetActionForOption(input, _mainMenuOptions)?.Action;
             }
+
+            return action;
         }
 
         private void WriteMenu(IEnumerable<MenuOption> menu)
@@ -165,6 +168,7 @@ namespace Economics_Game
             }
         }
 
+        //Recursive method, stay back or it will rip your head off.
         private MenuOption GetActionForOption(int index, IEnumerable<MenuOption> options)
         {
             foreach (var option in options)
@@ -173,9 +177,11 @@ namespace Economics_Game
                 {
                     return option;
                 }
-                else
+                
+                var action = GetActionForOption(index, option.Submenu);
+                if (action != null)
                 {
-                    return GetActionForOption(index, option.Submenu);
+                    return action;
                 }
             }
 

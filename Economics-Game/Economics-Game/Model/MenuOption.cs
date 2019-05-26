@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using Economics_Game.Contract;
 
-namespace Economics_Game
+namespace Economics_Game.Model
 {
-    class MenuOption
+    public class MenuOption
     {
         public int Index { get; set; }
         public string Option { get; set; }
