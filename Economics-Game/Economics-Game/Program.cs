@@ -13,6 +13,8 @@ namespace Economics_Game
         }
         public static void Main(string[] args)
         {
+            var timeHandler = new TimeHandler();
+            
             var action = _userInterface.GetAction();
             
             action.ExecuteAction();

@@ -44,9 +44,11 @@
     <Compile Include="Model\FirmType.cs" />
     <Compile Include="Model\MenuOption.cs" />
     <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\StaffMember.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Test\FakeAction.cs" />
+    <Compile Include="TimeHandler.cs" />
     <Compile Include="UserInterface.cs" />
   </ItemGroup>
   <ItemGroup>

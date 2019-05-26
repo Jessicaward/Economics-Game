@@ -14,6 +14,7 @@
           <e p="FirmType.cs" t="Include" />
           <e p="MenuOption.cs" t="Include" />
           <e p="Product.cs" t="Include" />
+          <e p="StaffMember.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Plan.txt" t="Include" />
@@ -24,6 +25,7 @@
         <e p="Test" t="Include">
           <e p="FakeAction.cs" t="Include" />
         </e>
+        <e p="TimeHandler.cs" t="Include" />
         <e p="UserInterface.cs" t="Include" />
       </e>
       <e p="Economics-Game.sln" t="IncludeFlat" />

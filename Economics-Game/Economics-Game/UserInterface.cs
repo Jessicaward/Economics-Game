@@ -122,7 +122,7 @@ namespace Economics_Game
                     Console.WriteLine("That was an invalid input, please try again.");
                     Console.ResetColor();
                 }
-                //todo: this will need to be set to "current options"
+                
                 WriteMenu(currentOptions);
                 input = GetUserInput();
                 var option = GetOption(input, currentOptions);
