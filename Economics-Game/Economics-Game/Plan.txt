@@ -30,3 +30,10 @@ The UI will be a console based menu.
 The storage of the save will be done via text file.
     -Databases are large and unnecessary for such a simple storage system.
     -This allows me to store things in a "one file fits all" kinda way.
+"Locations" and firm types should be stored in text files, then read when the game boots up.
+    -This will make adding new firm types/locations super easy.
+Due to the nature of how the files work, the game will auto-save.
+Maybe it can take a backup of the file every 30 minutes or so? So if anything is corrupted it can be automatically rolled back.
+    -If this is implemented, include the time that the file was backed up, as well as how long the user has played since then.
+    -This will allow text like the following:
+        "Your game save was corrupted, we have rolled back to the latest backup, which was taken 7 minutes ago."

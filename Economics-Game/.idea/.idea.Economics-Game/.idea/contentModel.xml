@@ -5,12 +5,18 @@
       <e p="Economics-Game" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="Economics-Game.csproj" t="IncludeRecursive" />
+        <e p="InformationInterface.cs" t="Include" />
+        <e p="Model" t="Include">
+          <e p="Firm.cs" t="Include" />
+          <e p="FirmType.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive" />
         <e p="Plan.txt" t="Include" />
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="AssemblyInfo.cs" t="Include" />
         </e>
+        <e p="UserInterface.cs" t="Include" />
       </e>
       <e p="Economics-Game.sln" t="IncludeFlat" />
       <e p="packages" t="ExcludeRecursive" />
