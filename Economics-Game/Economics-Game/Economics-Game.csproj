@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actions\SaveAndQuitAction.cs" />
     <Compile Include="Contract\IAction.cs" />
     <Compile Include="InformationInterface.cs" />
     <Compile Include="Model\Firm.cs" />

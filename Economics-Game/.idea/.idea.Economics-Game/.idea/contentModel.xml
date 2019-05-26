@@ -3,6 +3,9 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Economics-Game" t="IncludeRecursive">
+        <e p="Actions" t="Include">
+          <e p="SaveAndQuitAction.cs" t="Include" />
+        </e>
         <e p="bin" t="ExcludeRecursive" />
         <e p="Contract" t="Include">
           <e p="IAction.cs" t="Include" />

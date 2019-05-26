@@ -17,7 +17,7 @@ namespace Economics_Game
             StartTime();
         }
         
-        public void StartTime()
+        private void StartTime()
         {
             _timer.Interval = _interval;
             _timer.AutoReset = true;

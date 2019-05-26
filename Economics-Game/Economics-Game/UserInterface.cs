@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Economics_Game.Actions;
 using Economics_Game.Contract;
 using Economics_Game.Model;
 using Economics_Game.Test;
@@ -15,21 +16,21 @@ namespace Economics_Game
             //todo: populate submenus
             _mainMenuOptions = new List<MenuOption>
             {
-                new MenuOption()
+                new MenuOption
                 {
                     Index = 1,
                     Option= "Products",
-                    Action = new FakeAction("Products"),
-                    Submenu = new List<MenuOption>()
+                    Action = null,
+                    Submenu = new List<MenuOption>
                     {
-                        new MenuOption()
+                        new MenuOption
                         {
                             Index = 5,
                             Option = "New product",
                             Action = new FakeAction("New Product"),
                             Submenu = null
                         },
-                        new MenuOption()
+                        new MenuOption
                         {
                             Index = 6,
                             Option = "View existing products",
@@ -38,21 +39,21 @@ namespace Economics_Game
                         }
                     }
                 },
-                new MenuOption()
+                new MenuOption
                 {
                     Index = 2,
                     Option = "Staff",
                     Action = null,
-                    Submenu = new List<MenuOption>()
+                    Submenu = new List<MenuOption>
                     {
-                        new MenuOption()
+                        new MenuOption
                         {
                             Index = 7,
                             Option = "Hire new staff member",
                             Action = new FakeAction("Hire new member"),
                             Submenu = null
                         },
-                        new MenuOption()
+                        new MenuOption
                         {
                             Index = 8,
                             Option = "View existing staff members",
@@ -61,21 +62,21 @@ namespace Economics_Game
                         }
                     }
                 },
-                new MenuOption()
+                new MenuOption
                 {
                     Index = 3,
                     Option = "Location",
                     Action = null,
-                    Submenu = new List<MenuOption>()
+                    Submenu = new List<MenuOption>
                     {
-                        new MenuOption()
+                        new MenuOption
                         {
                             Index = 9,
                             Option = "Move location",
                             Action = null,
                             Submenu = null
                         },
-                        new MenuOption()
+                        new MenuOption
                         {
                             Index = 10,
                             Option = "View all possible locations",
@@ -84,12 +85,20 @@ namespace Economics_Game
                         }
                     }
                 },
-                new MenuOption()
+                new MenuOption
                 {
                     Index = 4,
                     Option = "View monthly economic report",
                     Action = null,
                     Submenu = null
+                },
+                new MenuOption
+                {
+                    Index = 0,
+                    Option = "Save and Quit",
+                    Action = new SaveAndQuitAction(),
+                    Submenu = null
+                    
                 }
             };
             
@@ -118,9 +127,7 @@ namespace Economics_Game
                 Console.Clear();
                 if (input == -1)
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine("That was an invalid input, please try again.");
-                    Console.ResetColor();
+                    ShowInvalidMessage();
                 }
                 
                 WriteMenu(currentOptions);
@@ -132,9 +139,20 @@ namespace Economics_Game
                     action = option.Action;
                     currentOptions = option.Submenu;
                 }
+                else
+                {
+                    input = -1;
+                }
             }
 
             return action;
+        }
+
+        private void ShowInvalidMessage()
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("That was an invalid input, please try again.");
+            Console.ResetColor();
         }
 
         private void WriteMenu(IEnumerable<MenuOption> menu)

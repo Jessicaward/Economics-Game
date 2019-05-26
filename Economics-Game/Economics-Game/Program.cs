@@ -6,6 +6,7 @@ namespace Economics_Game
     internal class Program
     {
         private static readonly UserInterface _userInterface;
+        public static bool Exit;
         static Program()
         {
             //todo: obv these values shouldn't be empty.
@@ -15,11 +16,19 @@ namespace Economics_Game
         {
             var timeHandler = new TimeHandler();
             
-            var action = _userInterface.GetAction();
-            
-            action.ExecuteAction();
+            GameLoop();
 
             Console.WriteLine("Thanks for playing.");
+            Console.ReadLine();
+        }
+
+        private static void GameLoop()
+        {
+            while (!Exit)
+            {
+                var action = _userInterface.GetAction();
+                action.ExecuteAction();
+            }
         }
     }
 }
