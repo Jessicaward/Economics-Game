@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System;
+using System.Linq;
 
 namespace Economics_Game
 {
@@ -12,7 +13,11 @@ namespace Economics_Game
         }
         public static void Main(string[] args)
         {
-            _userInterface.GetAction();
+            var action = _userInterface.GetAction();
+            
+            action.ExecuteAction();
+
+            Console.WriteLine("Thanks for playing.");
         }
     }
 }

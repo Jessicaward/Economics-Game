@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using Economics_Game.Contract;
 using Economics_Game.Model;
+using Economics_Game.Test;
 
 namespace Economics_Game
 {
@@ -18,20 +19,20 @@ namespace Economics_Game
                 {
                     Index = 1,
                     Option= "Products",
-                    Action = null,
+                    Action = new FakeAction("Products"),
                     Submenu = new List<MenuOption>()
                     {
                         new MenuOption()
                         {
                             Index = 5,
-                            Option= "New product",
-                            Action = null,
+                            Option = "New product",
+                            Action = new FakeAction("New Product"),
                             Submenu = null
                         },
                         new MenuOption()
                         {
                             Index = 6,
-                            Option= "View existing products",
+                            Option = "View existing products",
                             Action = null,
                             Submenu = null
                         }
@@ -40,21 +41,21 @@ namespace Economics_Game
                 new MenuOption()
                 {
                     Index = 2,
-                    Option= "Staff",
-                    Action = null,
+                    Option = "Staff",
+                    Action = new FakeAction("Staff"),
                     Submenu = new List<MenuOption>()
                     {
                         new MenuOption()
                         {
                             Index = 7,
-                            Option= "Hire new staff member",
+                            Option = "Hire new staff member",
                             Action = null,
                             Submenu = null
                         },
                         new MenuOption()
                         {
                             Index = 8,
-                            Option= "View existing staff members",
+                            Option = "View existing staff members",
                             Action = null,
                             Submenu = null
                         }
@@ -63,21 +64,21 @@ namespace Economics_Game
                 new MenuOption()
                 {
                     Index = 3,
-                    Option= "Location",
+                    Option = "Location",
                     Action = null,
                     Submenu = new List<MenuOption>()
                     {
                         new MenuOption()
                         {
                             Index = 9,
-                            Option= "Move location",
+                            Option = "Move location",
                             Action = null,
                             Submenu = null
                         },
                         new MenuOption()
                         {
                             Index = 10,
-                            Option= "View all possible locations",
+                            Option = "View all possible locations",
                             Action = null,
                             Submenu = null
                         }
@@ -86,7 +87,7 @@ namespace Economics_Game
                 new MenuOption()
                 {
                     Index = 4,
-                    Option= "View monthly economic report",
+                    Option = "View monthly economic report",
                     Action = null,
                     Submenu = null
                 }
@@ -171,6 +172,10 @@ namespace Economics_Game
         //Recursive method, stay back or it will rip your head off.
         private MenuOption GetActionForOption(int index, IEnumerable<MenuOption> options)
         {
+            if (options == null || !options.Any())
+            {
+                return null;
+            }
             foreach (var option in options)
             {
                 if (option.Index == index)
