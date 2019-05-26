@@ -6,12 +6,14 @@ namespace Economics_Game
     public class TimeHandler
     {
         public int CurrentDay { get; set; }
+        public int DayProgress { get; set; }
         private readonly Timer _timer = new Timer();
         private readonly int _interval;
 
         public TimeHandler()
         {
-            _interval = 30000;
+            CurrentDay = 1;
+            _interval = 1000;
             StartTime();
         }
         
@@ -25,8 +27,13 @@ namespace Economics_Game
 
         private void AddDay(object sender, ElapsedEventArgs e)
         {
-            CurrentDay++;
-            Console.WriteLine($"day {CurrentDay}");
+            //Day Progress allows program to get progress bar count
+            DayProgress++;
+            if (DayProgress == 30)
+            {
+                CurrentDay++;
+                DayProgress = 0;
+            }
         }
     }
 }

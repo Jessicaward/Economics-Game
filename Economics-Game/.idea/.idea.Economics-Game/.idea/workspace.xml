@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e424dbd0-693c-4d9e-8e0f-fe03cf82155f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Economics-Game/Model/StaffMember.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Economics-Game/TimeHandler.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Economics-Game/Economics-Game.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/Economics-Game.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Economics-Game/Model/Firm.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/Model/Firm.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Economics-Game/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Economics-Game/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/UserInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economics-Game/TimeHandler.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/TimeHandler.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics-Game.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics-Game.csproj.CoreCompileInputs.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.exe" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.pdb" afterDir="false" />
     </list>
@@ -25,52 +17,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Economics-Game/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-              <folding>
-                <marker date="1558893361385" expanded="true" signature="6:32" ph="..." />
-                <marker date="1558893361385" expanded="true" signature="58:640" ph="{...}" />
-                <marker date="1558893361385" expanded="true" signature="87:638" ph="{...}" />
-                <marker date="1558893361385" expanded="true" signature="180:346" ph="{...}" />
-                <marker date="1558893361385" expanded="true" signature="393:632" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Economics-Game/Plan.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Economics-Game/Model/Firm.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="8" column="59" lean-forward="true" selection-start-line="8" selection-start-column="59" selection-end-line="8" selection-end-column="59" />
-              <folding>
-                <marker date="1558892482487" expanded="true" signature="59:241" ph="{...}" />
-                <marker date="1558892482487" expanded="true" signature="83:239" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Economics-Game/Model/StaffMember.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
-              <folding>
-                <marker date="1558892635389" expanded="true" signature="30:242" ph="{...}" />
-                <marker date="1558892635389" expanded="true" signature="61:240" ph="{...}" />
-              </folding>
+            <state relative-caret-position="140">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -78,15 +28,16 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Economics-Game/TimeHandler.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+            <state relative-caret-position="246">
+              <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
               <folding>
-                <marker date="1558893671580" expanded="true" signature="6:34" ph="..." />
-                <marker date="1558893671580" expanded="true" signature="60:715" ph="{...}" />
-                <marker date="1558893671580" expanded="true" signature="91:713" ph="{...}" />
-                <marker date="1558893671580" expanded="true" signature="264:340" ph="{...}" />
-                <marker date="1558893671580" expanded="true" signature="381:545" ph="{...}" />
-                <marker date="1558893671580" expanded="true" signature="609:707" ph="{...}" />
+                <marker date="1558895861105" expanded="true" signature="6:34" ph="..." />
+                <marker date="1558895861105" expanded="true" signature="60:930" ph="{...}" />
+                <marker date="1558895861105" expanded="true" signature="91:928" ph="{...}" />
+                <marker date="1558895861105" expanded="true" signature="309:412" ph="{...}" />
+                <marker date="1558895861105" expanded="true" signature="453:617" ph="{...}" />
+                <marker date="1558895861105" expanded="true" signature="681:922" ph="{...}" />
+                <marker date="1558895861105" expanded="true" signature="821:912" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -230,12 +181,12 @@
       <option name="presentableId" value="Default" />
       <updated>1558827783378</updated>
       <workItem from="1558827788501" duration="6293000" />
-      <workItem from="1558888508780" duration="3967000" />
+      <workItem from="1558888508780" duration="5003000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10260000" />
+    <option name="totallyTimeSpent" value="11296000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -301,19 +252,6 @@
           <folding>
             <marker date="1558828849404" expanded="true" signature="24:84" ph="{...}" />
             <marker date="1558828849404" expanded="true" signature="51:82" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Economics-Game/InformationInterface.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-          <folding>
-            <marker date="1558829229865" expanded="true" signature="39:503" ph="{...}" />
-            <marker date="1558829229865" expanded="true" signature="46:301" ph="/// This class will become the &quot;second&quot; console. ... " />
-            <marker date="1558829229865" expanded="true" signature="339:501" ph="{...}" />
-            <marker date="1558829229865" expanded="true" signature="380:495" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -563,13 +501,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Economics-Game/Plan.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Economics-Game/Model/Firm.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -592,6 +523,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Economics-Game/InformationInterface.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding>
+            <marker date="1558829229865" expanded="true" signature="39:503" ph="{...}" />
+            <marker date="1558829229865" expanded="true" signature="46:301" ph="/// This class will become the &quot;second&quot; console. ... " />
+            <marker date="1558829229865" expanded="true" signature="339:501" ph="{...}" />
+            <marker date="1558829229865" expanded="true" signature="380:495" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Economics-Game/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -606,17 +550,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Economics-Game/Plan.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Economics-Game/TimeHandler.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="13" column="26" selection-start-line="13" selection-start-column="26" selection-end-line="13" selection-end-column="26" />
+        <state relative-caret-position="246">
+          <caret line="33" column="29" selection-start-line="33" selection-start-column="29" selection-end-line="33" selection-end-column="29" />
           <folding>
-            <marker date="1558893671580" expanded="true" signature="6:34" ph="..." />
-            <marker date="1558893671580" expanded="true" signature="60:715" ph="{...}" />
-            <marker date="1558893671580" expanded="true" signature="91:713" ph="{...}" />
-            <marker date="1558893671580" expanded="true" signature="264:340" ph="{...}" />
-            <marker date="1558893671580" expanded="true" signature="381:545" ph="{...}" />
-            <marker date="1558893671580" expanded="true" signature="609:707" ph="{...}" />
+            <marker date="1558895861105" expanded="true" signature="6:34" ph="..." />
+            <marker date="1558895861105" expanded="true" signature="60:930" ph="{...}" />
+            <marker date="1558895861105" expanded="true" signature="91:928" ph="{...}" />
+            <marker date="1558895861105" expanded="true" signature="309:412" ph="{...}" />
+            <marker date="1558895861105" expanded="true" signature="453:617" ph="{...}" />
+            <marker date="1558895861105" expanded="true" signature="681:922" ph="{...}" />
+            <marker date="1558895861105" expanded="true" signature="821:912" ph="{...}" />
           </folding>
         </state>
       </provider>
