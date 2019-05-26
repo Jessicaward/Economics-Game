@@ -2,8 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e424dbd0-693c-4d9e-8e0f-fe03cf82155f" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Economics-Game/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/Program.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Economics-Game/Contract/IAction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Economics-Game/Model/MenuOption.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Economics-Game/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economics-Game/Economics-Game.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/Economics-Game.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Economics-Game/UserInterface.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/UserInterface.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/bin/Debug/Economics_Game.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics-Game.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics-Game.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.exe" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.exe" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Economics-Game/obj/Debug/Economics_Game.pdb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,7 +22,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Economics-Game/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
@@ -28,29 +37,72 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Economics-Game/UserInterface.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1309">
-              <caret line="93" column="46" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
+            <state relative-caret-position="428">
+              <caret line="184" column="1" lean-forward="true" selection-start-line="184" selection-start-column="1" selection-end-line="184" selection-end-column="1" />
               <folding>
-                <marker date="1558831824819" expanded="true" signature="6:92" ph="..." />
-                <marker date="1558831824819" expanded="true" signature="118:2896" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="151:2894" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="228:530" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="310:459" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="842:1752" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="865:1292" ph="/* This will return *something* for the game to do. ... */" />
-                <marker date="1558831824819" expanded="true" signature="1350:1742" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="1430:1659" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="1786:2068" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="1864:2058" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="1935:2044" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="2104:2775" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="2211:2270" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="2321:2376" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="2426:2765" ph="{...}" />
-                <marker date="1558831824819" expanded="true" signature="2819:2888" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="6:123" ph="..." />
+                <marker date="1558865489336" expanded="true" signature="149:5972" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="182:5970" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="259:3214" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="371:3130" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="422:1194" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="603:1176" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="670:873" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="940:1154" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="1245:2054" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="1423:2036" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="1490:1703" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="1770:2014" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="2105:2885" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="2286:2867" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="2353:2558" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="2625:2845" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="2936:3116" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="3420:4496" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="3443:3819" ph="/* This will return *something* for the game to do. ... */" />
+                <marker date="1558865489336" expanded="true" signature="3930:4486" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="4010:4239" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="4558:4807" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="4612:4797" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="4671:4783" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="4843:5514" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="4950:5009" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="5060:5115" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="5165:5504" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="5605:5964" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="5659:5928" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="5716:5787" ph="{...}" />
+                <marker date="1558865489336" expanded="true" signature="5808:5914" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Economics-Game/Model/MenuOption.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="190">
+              <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+              <folding>
+                <marker date="1558865281751" expanded="true" signature="6:64" ph="..." />
+                <marker date="1558865281751" expanded="true" signature="90:314" ph="{...}" />
+                <marker date="1558865281751" expanded="true" signature="113:312" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Economics-Game/Contract/IAction.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
+              <folding>
+                <marker date="1558864222391" expanded="true" signature="33:108" ph="{...}" />
+                <marker date="1558864222391" expanded="true" signature="64:106" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -75,8 +127,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Economics-Game/Plan.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="147">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
             </state>
           </provider>
         </entry>
@@ -85,7 +137,7 @@
         <entry file="file://$PROJECT_DIR$/Economics-Game/Model/Firm.cs">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="114">
-              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
               <folding>
                 <marker date="1558828808436" expanded="true" signature="24:146" ph="{...}" />
                 <marker date="1558828808436" expanded="true" signature="48:144" ph="{...}" />
@@ -108,8 +160,10 @@
     <setting file="file://$PROJECT_DIR$/Economics-Game/Model/Product.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Economics-Game/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Economics-Game/Model/Firm.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Economics-Game/Contract/IAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Economics-Game/Model/FirmType.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Economics-Game/UserInterface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Economics-Game/Model/MenuOption.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Economics-Game/InformationInterface.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -122,8 +176,10 @@
         <option value="$PROJECT_DIR$/Economics-Game/Model/MenuNode.cs" />
         <option value="$PROJECT_DIR$/Economics-Game/Model/Product.cs" />
         <option value="$PROJECT_DIR$/Economics-Game/Plan.txt" />
-        <option value="$PROJECT_DIR$/Economics-Game/UserInterface.cs" />
         <option value="$PROJECT_DIR$/Economics-Game/Program.cs" />
+        <option value="$PROJECT_DIR$/Economics-Game/Contract/IAction.cs" />
+        <option value="$PROJECT_DIR$/Economics-Game/Model/MenuOption.cs" />
+        <option value="$PROJECT_DIR$/Economics-Game/UserInterface.cs" />
       </list>
     </option>
   </component>
@@ -220,12 +276,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1558827783378</updated>
-      <workItem from="1558827788501" duration="3843000" />
+      <workItem from="1558827788501" duration="5554000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3843000" />
+    <option name="totallyTimeSpent" value="5554000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -241,7 +297,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18174475" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18174475" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="NuGet" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -251,9 +307,10 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Performance Profiler" />
+      <window_info anchor="bottom" id="Build" weight="0.32913166" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32913166" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -313,6 +370,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Economics-Game/Model/Firm.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <marker date="1558828808436" expanded="true" signature="24:146" ph="{...}" />
+            <marker date="1558828808436" expanded="true" signature="48:144" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Economics-Game/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
+          <folding>
+            <marker date="1558831923150" expanded="true" signature="44:447" ph="{...}" />
+            <marker date="1558831923150" expanded="true" signature="73:445" ph="{...}" />
+            <marker date="1558831923150" expanded="true" signature="166:332" ph="{...}" />
+            <marker date="1558831923150" expanded="true" signature="379:439" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Economics-Game/Plan.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Economics-Game/Model/Product.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
@@ -327,59 +415,67 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Economics-Game/Model/Firm.cs">
+    <entry file="file://$PROJECT_DIR$/Economics-Game/Contract/IAction.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        <state relative-caret-position="76">
+          <caret line="4" column="29" lean-forward="true" selection-start-line="4" selection-start-column="29" selection-end-line="4" selection-end-column="29" />
           <folding>
-            <marker date="1558828808436" expanded="true" signature="24:146" ph="{...}" />
-            <marker date="1558828808436" expanded="true" signature="48:144" ph="{...}" />
+            <marker date="1558864222391" expanded="true" signature="33:108" ph="{...}" />
+            <marker date="1558864222391" expanded="true" signature="64:106" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Economics-Game/Plan.txt">
+    <entry file="file://$PROJECT_DIR$/Economics-Game/Model/MenuOption.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+        <state relative-caret-position="190">
+          <caret line="10" column="43" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="43" />
+          <folding>
+            <marker date="1558865281751" expanded="true" signature="6:64" ph="..." />
+            <marker date="1558865281751" expanded="true" signature="90:314" ph="{...}" />
+            <marker date="1558865281751" expanded="true" signature="113:312" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Economics-Game/UserInterface.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="93" column="46" selection-start-line="93" selection-start-column="46" selection-end-line="93" selection-end-column="46" />
+        <state relative-caret-position="428">
+          <caret line="184" column="1" lean-forward="true" selection-start-line="184" selection-start-column="1" selection-end-line="184" selection-end-column="1" />
           <folding>
-            <marker date="1558831824819" expanded="true" signature="6:92" ph="..." />
-            <marker date="1558831824819" expanded="true" signature="118:2896" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="151:2894" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="228:530" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="310:459" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="842:1752" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="865:1292" ph="/* This will return *something* for the game to do. ... */" />
-            <marker date="1558831824819" expanded="true" signature="1350:1742" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="1430:1659" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="1786:2068" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="1864:2058" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="1935:2044" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="2104:2775" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="2211:2270" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="2321:2376" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="2426:2765" ph="{...}" />
-            <marker date="1558831824819" expanded="true" signature="2819:2888" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Economics-Game/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="39" selection-start-line="14" selection-start-column="39" selection-end-line="14" selection-end-column="39" />
-          <folding>
-            <marker date="1558831923150" expanded="true" signature="44:447" ph="{...}" />
-            <marker date="1558831923150" expanded="true" signature="73:445" ph="{...}" />
-            <marker date="1558831923150" expanded="true" signature="166:332" ph="{...}" />
-            <marker date="1558831923150" expanded="true" signature="379:439" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="6:123" ph="..." />
+            <marker date="1558865489336" expanded="true" signature="149:5972" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="182:5970" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="259:3214" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="371:3130" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="422:1194" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="603:1176" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="670:873" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="940:1154" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="1245:2054" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="1423:2036" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="1490:1703" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="1770:2014" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="2105:2885" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="2286:2867" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="2353:2558" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="2625:2845" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="2936:3116" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="3420:4496" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="3443:3819" ph="/* This will return *something* for the game to do. ... */" />
+            <marker date="1558865489336" expanded="true" signature="3930:4486" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="4010:4239" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="4558:4807" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="4612:4797" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="4671:4783" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="4843:5514" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="4950:5009" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="5060:5115" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="5165:5504" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="5605:5964" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="5659:5928" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="5716:5787" ph="{...}" />
+            <marker date="1558865489336" expanded="true" signature="5808:5914" ph="{...}" />
           </folding>
         </state>
       </provider>

@@ -38,9 +38,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contract\IAction.cs" />
     <Compile Include="InformationInterface.cs" />
     <Compile Include="Model\Firm.cs" />
     <Compile Include="Model\FirmType.cs" />
+    <Compile Include="Model\MenuOption.cs" />
     <Compile Include="Model\Product.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
