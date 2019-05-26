@@ -42,14 +42,14 @@ namespace Economics_Game
                 {
                     Index = 2,
                     Option = "Staff",
-                    Action = new FakeAction("Staff"),
+                    Action = null,
                     Submenu = new List<MenuOption>()
                     {
                         new MenuOption()
                         {
                             Index = 7,
                             Option = "Hire new staff member",
-                            Action = null,
+                            Action = new FakeAction("Hire new member"),
                             Submenu = null
                         },
                         new MenuOption()
@@ -112,7 +112,8 @@ namespace Economics_Game
             //anything above 0 is a valid menu option.
             IAction action = null;
             var input = -2;
-            while (input < 0 && action == null)
+            var currentOptions = _mainMenuOptions;
+            while (action == null)
             {
                 Console.Clear();
                 if (input == -1)
@@ -122,9 +123,15 @@ namespace Economics_Game
                     Console.ResetColor();
                 }
                 //todo: this will need to be set to "current options"
-                WriteMenu(_mainMenuOptions);
+                WriteMenu(currentOptions);
                 input = GetUserInput();
-                action = GetActionForOption(input, _mainMenuOptions)?.Action;
+                var option = GetOption(input, currentOptions);
+
+                if (option != null)
+                {
+                    action = option.Action;
+                    currentOptions = option.Submenu;
+                }
             }
 
             return action;
@@ -170,7 +177,7 @@ namespace Economics_Game
         }
 
         //Recursive method, stay back or it will rip your head off.
-        private MenuOption GetActionForOption(int index, IEnumerable<MenuOption> options)
+        private MenuOption GetOption(int index, IEnumerable<MenuOption> options)
         {
             if (options == null || !options.Any())
             {
@@ -183,7 +190,7 @@ namespace Economics_Game
                     return option;
                 }
                 
-                var action = GetActionForOption(index, option.Submenu);
+                var action = GetOption(index, option.Submenu);
                 if (action != null)
                 {
                     return action;
